@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar"
+        app:title="Create Fault Report"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="Create Fault Report"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logo"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/building"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/organizationTypes" />
+<androidx.appcompat.widget.AppCompatEditText
+    android:layout_below="@id/toolbar"
+    android:layout_marginTop="30dp"
+    android:editable="false"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/lc"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="60dp"
+        android:layout_below="@id/building"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/organizationTypes" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_below="@id/building"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:editable="false"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/ntur"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="60dp"
+        android:layout_below="@id/lc"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:entries="@array/organizationTypes" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_below="@id/lc"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:editable="false"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ntur"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+       android:id="@+id/att"
+
+        android:background="@drawable/circle"
+        android:text="Attachment name "/>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/attchment"
+        android:layout_below="@id/ntur"
+        android:layout_marginRight="20dp"
+
+        android:layout_alignParentRight="true"
+       />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="submit"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:background="@color/red"
+        android:layout_below="@id/att"/>
+
+
+
+
+
+</RelativeLayout>

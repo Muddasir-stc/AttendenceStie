@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="organizationTypes">
+        <item>Select Building</item>
+        <item>Select Location</item>
+        <item>Nature of Fault</item>
+    </string-array>
+
+</resources>

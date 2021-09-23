@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-50dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorAccent"
+        app:civ_border_color="#FF000000"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:src="@color/colorPrimary"
+        android:layout_marginRight="80dp"
+        app:civ_border_width="2dp"
+        android:layout_below="@id/profile_image"
+        app:civ_border_color="#FF000000"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="NRIC Number"
+        android:layout_below="@+id/profile_image1"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_below="@id/messageTextInputLayout"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:src="@color/colorPrimary"
+        android:layout_marginRight="-30dp"
+        android:layout_marginBottom="-30dp"
+        app:civ_border_width="2dp"
+        android:layout_alignParentBottom="true"
+        app:civ_border_color="#FF000000"/>
+</RelativeLayout>
